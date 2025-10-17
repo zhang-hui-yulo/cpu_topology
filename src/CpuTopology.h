@@ -26,7 +26,7 @@ struct CpuTopology {
        Many server CPUs can simulate more than 2 logical processor on 1 physical core. */
     uint32_t logicalProcessors = std::numeric_limits<uint32_t>::max();
     /* AMD specific value. Number of SoC which shares the same L3.
-       It shall be the number of CCX (Zen 1~2) or CCD (Zen 3 ~ 6). */
+       It shall be the number of CCX (Zen 1~2) or CCD (Zen 3 ~ 5). */
     uint32_t complexGroups = std::numeric_limits<uint32_t>::max();
     /* Number of the physical core of each SoC sharing the same L3. */
     std::vector<uint32_t> complexGroupSizes;
